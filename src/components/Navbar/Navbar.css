@@ -1,0 +1,64 @@
+/* Navbar background color */
+.navbar {
+   /* Light shade of white */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 8px 0; /* Reduce top and bottom padding */
+}
+
+/* Navbar brand logo */
+.navbar-brand img {
+  width: 120px; /* Reduce logo width to reduce navbar height */
+}
+
+/* Navbar link styling */
+.navbar-nav .nav-link {
+  color: #333 !important; /* Darker text color for contrast */
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 4px 12px; /* Reduce padding to minimize height */
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+ cursor: pointer;
+}
+
+/* Hover effect for links */
+.navbar-nav .nav-link:hover {
+  background-color: rgba(136, 136, 136, 0.1); /* Light gray background on hover */
+  transform: translateY(-2px); /* Slightly reduced transform */
+}
+
+/* Active link styling */
+.navbar-nav .active {
+  font-weight: 700;
+  color: #fff !important;
+  background-color: #888888; /* Darker gray for active state */
+  border-radius: 4px;
+  padding: 4px 12px; /* Match padding reduction */
+}
+
+/* Navbar toggle button (burger icon) */
+.navbar-toggler-icon {
+  background-color: #d1d1d1; /* Light gray burger icon */
+}
+
+/* Adjustments for mobile */
+@media (max-width: 767px) {
+  .navbar-nav .nav-link {
+    font-size: 14px;
+    padding: 4px 10px; /* Further reduce padding on mobile */
+  }
+
+  .navbar-nav .nav-item {
+    margin: 4px 0;
+  }
+  .navbar-collapse {
+    max-width: 250px; /* Adjust as needed */
+    margin-left: auto; /* Push to the right side */
+  }
+  .navbar-nav {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+

@@ -1,0 +1,86 @@
+.carousel .carousel-item {
+  height: 90vh;
+  overflow: hidden; /* Ensures that the image's rounded corners show fully */
+  border-radius: 15px; /* Apply the same border-radius to the carousel item */
+ 
+}
+
+
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  
+  left: 0;
+  min-height: 100vh;
+  border-radius: 20px;
+}
+#carouselExampleCaptions {
+  max-width: 85%; /* Adjust this value to fit your desired width */
+  margin: 0 auto; /* Centers the carousel */
+}
+
+.carousel-inner {
+  width: 100%; /* Ensure the inner items take the full width of the carousel */
+}
+
+.carousel-item img {
+  width: 100%; /* Ensure images take the full width of the carousel item */
+  object-fit: cover; /* Ensures images cover the entire item area without distortion */
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  left: 20%;
+
+  color: white; /* Change text color */
+  font-size: 18px; /* Adjust size */
+  font-weight: bold; /* Make text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add a text shadow */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 5px; /* Rounded corners for the background */
+  max-width: 90%; /* Adjust the width for responsiveness */
+  text-align: center; /* Center-align the text */
+}
+
+/* Add media query for mobile view (adjust as per screen size) */
+@media (max-width: 768px) {
+  .carousel .carousel-item {
+    height: 60vh; /* Shorten the height for mobile screens */
+  }
+
+  .carousel-item img {
+    min-height: 60vh; /* Ensure the image fills the height correctly */
+  }
+
+  .carousel-caption {
+    font-size: 12px; /* Smaller text size for mobile */
+    padding: 12px; /* Adjust padding */
+    bottom: 20px; /* Ensure it's placed near the bottom */
+    left: 20%; /* Adjust the position to center the caption better */
+    max-width: 80%; /* Limit width to ensure it's not too large */
+    color: white; /* Ensure text is white */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Enhance text visibility */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 5px; /* Round corners for the background */
+    z-index: 1; /* Ensure it’s above other elements */
+    text-align: center; /* Center text */
+  }
+
+  .carousel-caption h5,
+  .carousel-caption p {
+    margin: 0; /* Ensure no margin around the text */
+    padding: 0; /* Ensure padding doesn't affect layout */
+  }
+}
+
+/* Optional: Adjust carousel indicator styles for mobile */
+@media (max-width: 768px) {
+  .carousel-indicators button {
+    width: 10px;
+    height: 10px; /* Smaller indicators */
+  }
+}

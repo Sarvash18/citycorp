@@ -1,0 +1,20 @@
+.logo {
+  width: 100%;
+  max-width: 120px; /* Maximum size to keep them large but contained */
+  aspect-ratio: 3/3;
+  object-fit: contain;
+  mix-blend-mode: darken;
+}
+.logo-hover:hover{
+    transition: 0.1s ease-in;
+    transform: scale(1.1);
+}
+
+.logo-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; /* Shadow around the entire logo container */
+  margin: 20px auto; /* Center the container */
+  max-width: 90%; /* Responsive width */
+}

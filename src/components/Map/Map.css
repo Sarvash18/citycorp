@@ -1,0 +1,24 @@
+/* Map.css */
+.map-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Centers the map horizontally */
+}
+
+.map-wrapper {
+  height: 450px; /* Fixed height for the map */
+  width: 90%; /* Set a percentage width to limit the map's width */
+  max-width: 1000px; /* Optionally, set a max width to restrict it further */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 0 auto; /* Centers the map container */
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .map-wrapper {
+    width: 100%; /* Full width on smaller screens */
+    height: 250px; /* Smaller map height on mobile */
+  }
+}

@@ -1,0 +1,171 @@
+/* Existing styles for larger screens */
+#ivas {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+#ivas::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/Ivas Kitchen.webp");
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px); /* Apply the blur only to the background */
+  z-index: -1; /* Place it behind the main content */
+}
+
+#ivas > * {
+  position: relative;
+  z-index: 1;
+}
+
+.cards-group {
+  display: flex;
+  gap: 80px;
+}
+
+.cards {
+  width: 225px;
+  height: 400px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.cards img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.cards .layer {
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 75%;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.cards .info {
+  position: absolute;
+  text-align: left;
+  bottom: -50%;
+  left: 10px;
+  padding: 15px;
+  opacity: 0;
+  transition: 0.5s bottom, 1.75s opacity;
+}
+
+.info p {
+  font-size: 14px;
+  text-align: left;
+  margin-top: 3px;
+}
+
+.info button {
+  background: #490ccc;
+  border: none;
+  color: aliceblue;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.info button:hover {
+  background: #3b0a99;
+  transform: scale(1.05);
+}
+
+.info button:active {
+  background: #290672;
+  transform: scale(0.95);
+}
+
+.cards:hover,
+.cards:hover img,
+.cards:hover layer {
+  transform: scale(1.1);
+}
+
+.cards:hover > .layer {
+  opacity: 1;
+}
+
+.cards:hover > .info {
+  bottom: 0;
+  opacity: 1;
+}
+
+.cards-group:hover > .cards:not(:hover) {
+  filter: blur(5px);
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  #ivas {
+    height: auto; /* Allow for flexible height */
+    padding: 20px; /* Add some padding for mobile screens */
+  }
+
+  /* Make the cards stack vertically on mobile */
+  .cards-group {
+    display: block;
+    width: 100%;
+    gap: 15px; /* Space between cards */
+  }
+
+  .cards {
+    width: 100%; /* Cards take up full width */
+    height: 300px; /* Adjust height for better mobile view */
+    margin-bottom: 15px; /* Space between cards */
+  }
+
+  .cards img {
+    height: 100%; /* Ensure image fills the card */
+  }
+
+  /* Adjust text size and button styles for mobile */
+  .info h2 {
+    font-size: 18px; /* Slightly smaller title */
+  }
+
+  .info p {
+    font-size: 12px; /* Smaller text for mobile */
+  }
+
+  .info button {
+    padding: 8px 14px; /* Adjust button padding */
+    font-size: 16px; /* Larger button text */
+  }
+
+  .cards .layer {
+    height: 60%; /* Adjust the layer for mobile */
+  }
+
+  .cards .info {
+    bottom: 0;
+    opacity: 1; /* Ensure the info is visible on mobile */
+  }
+}
