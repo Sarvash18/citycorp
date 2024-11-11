@@ -7,7 +7,7 @@ import Ivas from "./components/Ivas/Ivas";
 import Decorations from "./components/Decorations/Decorations";
 import Distributors from "./components/Distributors/Distributors";
 import Maps from "./components/Map/Map";
-import Footer2 from "./components/Footer-2/Footer2";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div>
@@ -19,7 +19,7 @@ function App() {
       <Decorations />
       <Distributors />
       <Maps />
-      <Footer2 />
+      <Footer />
     </div>
   );
 }
