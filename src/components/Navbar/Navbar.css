@@ -1,13 +1,12 @@
 /* Navbar background color */
 .navbar {
-   /* Light shade of white */
+  /* Light shade of white */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   padding: 8px 0; /* Reduce top and bottom padding */
   font-family: "Open Sans", sans-serif;
-  font-weight:bold;
-  
+  font-weight: bold;
+  width: 100%;
 }
-
 
 /* Navbar brand logo */
 .navbar-brand img {
@@ -16,57 +15,77 @@
 
 /* Navbar link styling */
 .navbar-nav .nav-link {
-  color: #333;/* Darker text color for contrast */
+  color: #333; /* Darker text color for contrast */
   font-weight: bold;
   font-size: medium;
   letter-spacing: 1px;
   padding: 4px 10px; /* Reduce padding to minimize height */
   border-radius: 4px;
   transition: background-color 0.3s ease, transform 0.3s ease;
- cursor: pointer;
+  cursor: pointer;
 }
 
 /* Hover effect for links */
 .navbar-nav .nav-link:hover {
-   color: black;
-    border-radius: 50px;
-   /* Light gray background on hover */
+  color: black;
+  border-radius: 50px;
+  /* Light gray background on hover */
   transform: translateY(-2px); /* Slightly reduced transform */
 }
 
 /* Active link styling */
 .navbar-nav .active {
   font-weight: 700;
- background-image: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
+  background-image: linear-gradient(
+    -225deg,
+    #ff3cac 0%,
+    #562b7c 52%,
+    #2b86c5 100%
+  );
   color: white !important;
-   
+
   border-radius: 50px;
   padding: 4px 12px; /* Match padding reduction */
 }
 
 /* Navbar toggle button (burger icon) */
-.navbar-toggler-icon {
-  background-color: #d1d1d1; /* Light gray burger icon */
-}
 
 /* Adjustments for mobile */
 @media (max-width: 767px) {
+  
+  .navbar-brand img {
+    width: 110px; /* Reduce logo width */
+  }
   .navbar-nav .nav-link {
-    font-size: 14px;
+    font-size: 15px;
     padding: 4px 10px; /* Further reduce padding on mobile */
+  }
+  .navbar-nav .active {
+    padding: 4px 8px;
   }
 
   .navbar-nav .nav-item {
-    margin: 4px 0;
+    margin: 3px 0;
+    max-width: 100px;
+    margin-left: 25px;
   }
   .navbar-collapse {
-    max-width: 250px; /* Adjust as needed */
-    margin-left: auto; /* Push to the right side */
+    max-width: 40%; /* Set max width for the navbar collapse */
+    margin-left: 250px;
+    
   }
   .navbar-nav {
     text-align: center;
-    width: 100%;
+    width: auto; /* Default width for navbar items */
+    margin-left: auto; /* Center the navbar items */
+    margin-right: auto;
+    background: rgb(113, 126, 185);
+    background: linear-gradient(
+      23deg,
+      rgba(113, 126, 185, 0.6980042016806722) 0%,
+      rgba(228, 206, 206, 0.3982843137254902) 54%,
+      rgba(172, 106, 167, 0.406687675070028) 100%
+    );
+    border-radius: 8px;
   }
 }
-
-

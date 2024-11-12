@@ -38,7 +38,7 @@ function Navbar() {
     <div id="home">
       <div className="container-fluid fixed-top">
         <header className="navbar navbar-expand-lg">
-          <a href="/" className="navbar-brand">
+          <a href="#home" className="navbar-brand">
             <img src={logo} className="bi me-2" width="120" alt="logo" />
           </a>
           <button
