@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/citycorp/static/css/main.eb0b9de6.css",
-    "main.js": "/citycorp/static/js/main.0addd44d.js",
+    "main.css": "/citycorp/static/css/main.1649750d.css",
+    "main.js": "/citycorp/static/js/main.68f93640.js",
     "static/media/Artificial vertical garden.png": "/citycorp/static/media/Artificial vertical garden.7c122e9f705bdcbb3dd5.png",
     "static/media/Mosaic tiles.png": "/citycorp/static/media/Mosaic tiles.e8b4ca29509011e7a296.png",
     "static/media/yale.jpg": "/citycorp/static/media/yale.9a731b00925bfb7fa2dc.jpg",
@@ -36,11 +36,11 @@
     "static/media/franke.jpg": "/citycorp/static/media/franke.be92b8dcb8b4d1430027.jpg",
     "static/media/srisma.jpg": "/citycorp/static/media/srisma.408a9fd07e64bc7e9adc.jpg",
     "index.html": "/citycorp/index.html",
-    "main.eb0b9de6.css.map": "/citycorp/static/css/main.eb0b9de6.css.map",
-    "main.0addd44d.js.map": "/citycorp/static/js/main.0addd44d.js.map"
+    "main.1649750d.css.map": "/citycorp/static/css/main.1649750d.css.map",
+    "main.68f93640.js.map": "/citycorp/static/js/main.68f93640.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb0b9de6.css",
-    "static/js/main.0addd44d.js"
+    "static/css/main.1649750d.css",
+    "static/js/main.68f93640.js"
   ]
 }
