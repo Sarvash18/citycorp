@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import cardData from "../../decorData";
-import './Decorations.css';
+import "./Decorations.css";
 
 const CardComponent = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -32,10 +32,10 @@ const CardComponent = () => {
         >
           {cardData.map((card) => (
             <div
-              className="card "
+              className="card"
               key={card.id}
               style={{
-                width: isMobile ? "45%" : "15rem", // 45% width for 2 cards per row on mobile
+                width: card.id === 5 ? "99%" : isMobile ? "45%" : "15rem", // 45% width for 2 cards per row on mobile
                 display: "flex",
                 flexDirection: "column",
               }}
@@ -71,7 +71,7 @@ const CardComponent = () => {
                   {card.content}
                 </p>
                 <a href={card.link} className="btn btn-primary mt-auto">
-                Explore
+                  Explore
                 </a>
               </div>
             </div>
