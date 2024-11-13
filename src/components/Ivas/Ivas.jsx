@@ -10,7 +10,7 @@ const Ivas = () => {
     color: "inherit",
   };
   return (
-    <div className="text-center h1 my-5">
+    <div className="text-center h1 my-5" id="products">
       Our Franchise - IVAS Modular Kitchens & Wardrobes
       <div id="ivas" className="mt-4">
         <div className="cards-group ">

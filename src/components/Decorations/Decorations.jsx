@@ -17,7 +17,7 @@ const CardComponent = () => {
   }, []);
 
   return (
-    <div className="text-center h1 my-5">
+    <div className="text-center h1 my-5" id="products">
       Our Decorative Solutions
       <div className="container mt-4 d-flex justify-content-around">
         <div
@@ -35,7 +35,12 @@ const CardComponent = () => {
               className="card"
               key={card.id}
               style={{
-                width: card.id === 5 ? "99%" : isMobile ? "45%" : "15rem", // 45% width for 2 cards per row on mobile
+                width:
+                  isMobile && card.id === 5
+                    ? "100%"
+                    : isMobile
+                    ? "45%"
+                    : "15rem", // 45% width for 2 cards per row on mobile
                 display: "flex",
                 flexDirection: "column",
               }}
