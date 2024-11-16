@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Hero.css";
 import Card from "../Card/Card";
 import syedImran from '../../images/Syed Imran.jpeg';
+import faisal from "../../images/Faisal.jpeg"
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -39,7 +40,7 @@ const Hero = () => {
       >
         <Card
           name=" Mr. Faisal Hussain"
-          img={syedImran}
+          img={faisal}
           phone="tel:+919443460300"
           wap="https://wa.me/+919443460300"
         />
