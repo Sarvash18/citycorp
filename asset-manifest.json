@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/citycorp/static/css/main.70210b27.css",
-    "main.js": "/citycorp/static/js/main.1b8e892b.js",
+    "main.css": "/citycorp/static/css/main.97d04c5b.css",
+    "main.js": "/citycorp/static/js/main.802a921a.js",
     "static/media/Artificial vertical garden.png": "/citycorp/static/media/Artificial vertical garden.7c122e9f705bdcbb3dd5.png",
     "static/media/Mosaic tiles.png": "/citycorp/static/media/Mosaic tiles.e8b4ca29509011e7a296.png",
     "static/media/yale.jpg": "/citycorp/static/media/yale.9a731b00925bfb7fa2dc.jpg",
@@ -16,12 +16,12 @@
     "static/media/Saint-Gobain Mesh.webp": "/citycorp/static/media/Saint-Gobain Mesh.567baa563e530314bda8.webp",
     "static/media/PVC Decorative Profiles.webp": "/citycorp/static/media/PVC Decorative Profiles.2e74b2dac36d38713a95.webp",
     "static/media/hero.jpeg": "/citycorp/static/media/hero.07b7c780f930e61745aa.jpeg",
-    "static/media/Faisal.jpeg": "/citycorp/static/media/Faisal.d06e67294ec1911eac3d.jpeg",
+    "static/media/Faisal.jpeg": "/citycorp/static/media/Faisal.9926a5ac09b6ec8211ae.jpeg",
     "static/media/3D puzzle.jpg": "/citycorp/static/media/3D puzzle.a54d36a8f5315f797a27.jpg",
     "static/media/alomax.jpeg": "/citycorp/static/media/alomax.562131aad678ac84c63e.jpeg",
     "static/media/bathla.webp": "/citycorp/static/media/bathla.13e91cbbcae3bf74bc7c.webp",
+    "static/media/Syed Imran.jpeg": "/citycorp/static/media/Syed Imran.669ac0f2fa1f5b53e89c.jpeg",
     "static/media/about-image.jpg": "/citycorp/static/media/about-image.2ce3f4a56f31b8cb7d30.jpg",
-    "static/media/Syed Imran.jpeg": "/citycorp/static/media/Syed Imran.6c5e700b8db8fa567958.jpeg",
     "static/media/logo.png": "/citycorp/static/media/logo.92d63c0ce91cfc3a1d41.png",
     "static/media/Modular Kitchen.jpg": "/citycorp/static/media/Modular Kitchen.36879bd5d6e5ad6ef386.jpg",
     "static/media/plus point.jpeg": "/citycorp/static/media/plus point.35286ee5c1c48116687a.jpeg",
@@ -37,11 +37,11 @@
     "static/media/franke.jpg": "/citycorp/static/media/franke.be92b8dcb8b4d1430027.jpg",
     "static/media/srisma.jpg": "/citycorp/static/media/srisma.408a9fd07e64bc7e9adc.jpg",
     "index.html": "/citycorp/index.html",
-    "main.70210b27.css.map": "/citycorp/static/css/main.70210b27.css.map",
-    "main.1b8e892b.js.map": "/citycorp/static/js/main.1b8e892b.js.map"
+    "main.97d04c5b.css.map": "/citycorp/static/css/main.97d04c5b.css.map",
+    "main.802a921a.js.map": "/citycorp/static/js/main.802a921a.js.map"
   },
   "entrypoints": [
-    "static/css/main.70210b27.css",
-    "static/js/main.1b8e892b.js"
+    "static/css/main.97d04c5b.css",
+    "static/js/main.802a921a.js"
   ]
 }
