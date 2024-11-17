@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Questrial&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+.playfair-font {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: 18px;
+  font-stretch: expanded;
+}
+.single-card {
+  position: relative; /* Needed for pseudo-element positioning */
+  width: 280px; /* Decreased width */
+ background: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+
+  box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
+  border-radius: 12px;
+  padding: 20px; /* Decreased padding */
+  height: 280px; /* Decreased height */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+}
+.single-card::before {
+  content: "";
+  position: absolute;
+  top: -5px; /* Slight offset for the border */
+  left: -5px;
+  width: calc(100% + 10px); /* Ensures the border surrounds the card */
+  height: calc(100% + 10px);
+  border-radius: 16px; /* Slightly larger than the card's radius */
+    background: linear-gradient(
+    45deg,
+    #dbdcd7,
+    #e2c9cc,
+    #e7627d,
+    #b8235a,
+    #801357,
+    #3d1635,
+    #1c1a27
+  );
+
+  background-size: 300% 300%;
+  z-index: -1; /* Places it below the card content */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.4s ease;
+}
+
+.single-card:hover::before {
+  opacity: 1; /* Reveal the border on hover */
+  animation: borderAnimation 3s infinite;
+}
+
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.single-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 0px 30px 1px rgba(25, 35, 45, 0.827);
+}
+
+.single-card .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.single-card .content .img {
+  height: 100px; /* Reduced image size */
+  width: 100px; /* Reduced image size */
+  border-radius: 12px;
+  background: rgb(136, 159, 243);
+  padding: 3px;
+  transition: transform 0.1s ease;
+ 
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.single-card .content .img:hover{
+  transform: scale(1.1);
+}
+.single-card .content .img img {
+  height: 100%;
+  width: 100%;
+
+ border-radius: 12px;
+  object-fit: cover;
+}
+
+.single-card .content .name {
+  font-weight: 550;
+  font-size: larger;
+  font-family: "Rubik", serif;
+}
+
+.single-card .content .job {
+  font-size: 16px; /* Reduced font size */
+  font-family: "Poppins", serif;
+  font-weight: 400;
+}
+
+.single-card .content .media-icons {
+  display: flex;
+}
+
+.media-icons:hover {
+  color: white;
+}
+
+.single-card .media-icons a {
+  text-align: center;
+  line-height: 30px; /* Adjusted line-height */
+  height: 35px; /* Reduced size */
+  width: 35px; /* Reduced size */
+  margin: 0 4px;
+  font-size: 14px;
+  color: black;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.single-card .media-icons a:hover {
+  color: white;
+}
+
+.Whatsapp {
+  font-size: 18px;
+}
+
+.phone {
+  font-size: 12px;
+}
+
+.wrapper .phone:hover,
+.wrapper .phone:hover .tooltip,
+.wrapper .phone:hover .tooltip::before {
+  background: #0f52b9;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .single-card {
+    width: 95%; /* Make it responsive on smaller screens */
+
+    height: 300px;
+  }
+  .single-card .content .img {
+    height: 130px; /* Increased image size */
+    width: 130px;
+  }
+  .single-card .content .job {
+    font-size: 17px; /* Reduced font size */
+  }
+}
+
+@media (max-width: 600px) {
+  .single-card {
+    width: 100%;
+  }
+}

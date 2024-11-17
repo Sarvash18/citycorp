@@ -5,6 +5,9 @@
  
 }
 
+#products h1{
+  font-family: "Abril Fatface", serif;
+}
 
 
 .carousel-item img {
@@ -82,5 +85,9 @@
   .carousel-indicators button {
     width: 10px;
     height: 10px; /* Smaller indicators */
+  }
+  .carousel-caption p{
+    margin-top: 7px;
+    font-size: 14px;
   }
 }

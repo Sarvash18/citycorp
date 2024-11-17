@@ -8,6 +8,8 @@ import Decorations from "./components/Decorations/Decorations";
 import Distributors from "./components/Distributors/Distributors";
 import Maps from "./components/Map/Map";
 import Footer from "./components/Footer/Footer";
+import Card2 from "./components/Card2/Card2";
+import Card from "./components/Card/Card";
 function App() {
   return (
     <div>
@@ -20,6 +22,8 @@ function App() {
       <Distributors />
       <Maps />
       <Footer />
+     
+      
     </div>
   );
 }

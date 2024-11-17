@@ -17,8 +17,8 @@ const CardComponent = () => {
   }, []);
 
   return (
-    <div className="text-center h1 my-5" id="products">
-      Our Decorative Solutions
+    <div className="text-center h1 my-5 " id="products">
+      <span className="font">Our Decorative Solutions</span>
       <div className="container mt-4 d-flex justify-content-around">
         <div
           className="d-flex justify-content-around flex-wrap"
@@ -59,7 +59,7 @@ const CardComponent = () => {
                 style={{ flexGrow: 1 }}
               >
                 <h5
-                  className="card-title"
+                  className="card-title playfair fw-bold"
                   style={{
                     fontSize: isMobile ? "1rem" : "1.25rem", // Reduce font size on mobile
                   }}
@@ -67,7 +67,7 @@ const CardComponent = () => {
                   {card.title}
                 </h5>
                 <p
-                  className="card-text"
+                  className="card-text questrial"
                   style={{
                     flexGrow: 1,
                     fontSize: isMobile ? "0.875rem" : "1rem", // Reduce font size on mobile

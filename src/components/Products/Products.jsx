@@ -64,8 +64,8 @@ const Products = () => {
               alt="..."
             />
             <div className="carousel-caption  d-md-block">
-              <h5>Hardware Ornaments</h5>
-              <p>
+              <h5 className="playfair fw-bold">Hardware Ornaments</h5>
+              <p className="questrial">
                 Elegant and durable hardware designs to add a touch of class to
                 your home.
               </p>
@@ -78,8 +78,10 @@ const Products = () => {
               alt="..."
             />
             <div className="carousel-caption  d-md-block">
-              <h5>Brass & Aluminium Fancy Fitting</h5>
-              <p>
+              <h5 className="playfair fw-bold">
+                Brass & Aluminium Fancy Fitting
+              </h5>
+              <p className="questrial">
                 High-quality brass and aluminum fittings for a perfect blend of
                 style and strength.
               </p>
@@ -88,8 +90,8 @@ const Products = () => {
           <div className="carousel-item">
             <img src={Pvc} className="d-block w-100 carousal-fill" alt="..." />
             <div className="carousel-caption  d-md-block">
-              <h5> ⁠PVC Decorative Profiles</h5>
-              <p>
+              <h5 className="playfair fw-bold"> ⁠PVC Decorative Profiles</h5>
+              <p className="questrial">
                 Versatile PVC profiles crafted to enhance aesthetics and
                 durability.
               </p>
@@ -102,8 +104,8 @@ const Products = () => {
               alt="..."
             />
             <div className="carousel-caption d-md-block">
-              <h5>⁠Stainless Steel Channels</h5>
-              <p>
+              <h5 className="playfair fw-bold">⁠Stainless Steel Channels</h5>
+              <p className="questrial">
                 Premium stainless steel channels for sturdy and lasting support.
               </p>
             </div>
@@ -115,8 +117,8 @@ const Products = () => {
               alt="..."
             />
             <div className="carousel-caption d-md-block">
-              <h5>Saint-Gobain Mesh</h5>
-              <p>
+              <h5 className="playfair fw-bold">Saint-Gobain Mesh</h5>
+              <p className="questrial">
                 High-performance mesh by Saint-Gobain for superior protection
                 and ventilation.
               </p>
@@ -126,7 +128,7 @@ const Products = () => {
             <img src={Pys} className="d-block w-100 carousal-fill" alt="..." />
             <div className="carousel-caption  d-md-block">
               <h5>⁠PYS Furniture Fittings</h5>
-              <p>
+              <p className="questrial">
                 Reliable and stylish furniture fittings for every space and
                 style.
               </p>

@@ -148,11 +148,12 @@
 
   /* Adjust text size and button styles for mobile */
   .info h2 {
-    font-size: 18px; /* Slightly smaller title */
+    font-size: 20px; /* Slightly smaller title */
   }
 
   .info p {
-    font-size: 12px; /* Smaller text for mobile */
+    font-size: 15px; /* Smaller text for mobile */
+    font-weight: 500;
   }
 
   .info button {

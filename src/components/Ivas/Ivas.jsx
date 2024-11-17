@@ -10,7 +10,7 @@ const Ivas = () => {
     color: "inherit",
   };
   return (
-    <div className="text-center h1 my-5" id="products">
+    <div className="text-center h1 my-5 font" id="products">
       Our Franchise - IVAS Modular Kitchens & Wardrobes
       <div id="ivas" className="mt-4">
         <div className="cards-group ">
@@ -20,9 +20,9 @@ const Ivas = () => {
             <div className="layer"></div>
 
             <div className="info">
-              <h2 className="fw-bold">Modular Kitchen</h2>
+              <h2 className="fw-bold playfair">Modular Kitchen</h2>
 
-              <p>
+              <p className="questrial">
                 Crafted for convenience and style, making your cooking space
                 efficient and beautiful.
               </p>
@@ -44,11 +44,11 @@ const Ivas = () => {
             <div className="layer"></div>
 
             <div className="info">
-              <h2 className="fw-bold" h1>
+              <h2 className="fw-bold playfair " h1>
                 Storage Units
               </h2>
 
-              <p>
+              <p className="questrial ">
                 Maximize your space with innovative storage solutions that keep
                 everything organized.
               </p>
@@ -69,9 +69,9 @@ const Ivas = () => {
             <div className="layer"></div>
 
             <div className="info">
-              <h2 className="fw-bold">Wardrobe Designs</h2>
+              <h2 className="fw-bold  playfair">Wardrobe Designs</h2>
 
-              <p>
+              <p className="questrial">
                 Elevate your wardrobe with customized designs that blend
                 functionality and elegance.
               </p>

@@ -8,7 +8,7 @@ const About = () => {
       <div className="about-section text-left d-flex align-items-center justify-content-center ">
         <div className="overlay text-white p-4 rounded">
           <h1 className="display-5 fw-bold">Our Path to Success</h1>
-          <p className="lead">
+          <p className="lead font-family questrial">
             From our commitment to delivering high-quality architectural
             hardware to our expertise in aluminum extrusion fittings, City
             Corporation is dedicated to enhancing the strength, functionality,

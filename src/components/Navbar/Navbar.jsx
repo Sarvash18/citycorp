@@ -80,7 +80,7 @@ function Navbar() {
           <div
             className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}
           >
-            <ul className="navbar-nav ms-auto">
+            <ul className="navbar-nav ms-auto playfair">
               {["home", "about", "products", "distributors", "contact"].map(
                 (section) => (
                   <li className="nav-item" key={section}>

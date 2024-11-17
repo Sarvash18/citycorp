@@ -4,7 +4,7 @@ import logos from "../../logos";
 
 const Distributors = () => {
   return (
-    <div className="text-center h1 my-5" id="distributors">
+    <div className="text-center h1 my-5 font" id="distributors">
       Our Distributors
       <div className="logo-container">
         <div className="container">
