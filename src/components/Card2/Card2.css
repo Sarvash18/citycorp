@@ -9,7 +9,7 @@
 .single-card {
   position: relative; /* Needed for pseudo-element positioning */
   width: 280px; /* Decreased width */
- background: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+ background: radial-gradient(circle at 10% 20%, rgba(216, 241, 230, 0.46) 0.1%, rgba(233, 226, 226, 0.28) 90.1%);
 
   box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
   border-radius: 12px;
@@ -21,21 +21,16 @@
 .single-card::before {
   content: "";
   position: absolute;
-  top: -5px; /* Slight offset for the border */
-  left: -5px;
-  width: calc(100% + 10px); /* Ensures the border surrounds the card */
-  height: calc(100% + 10px);
-  border-radius: 16px; /* Slightly larger than the card's radius */
-    background: linear-gradient(
-    45deg,
-    #dbdcd7,
-    #e2c9cc,
-    #e7627d,
-    #b8235a,
-    #801357,
-    #3d1635,
-    #1c1a27
-  );
+  top: -3px; /* Adjust for the border effect */
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 20px; /* Slightly larger than the card */
+  background: linear-gradient(45deg, #d9d9d9, #bcbcbc, #efefef, #e0e0e0);
+  background-size: 400% 400%; /* Creates a smooth gradient shift */
+  z-index: -1;
+  animation: borderAnimation 6s ease infinite;
+
 
   background-size: 300% 300%;
   z-index: -1; /* Places it below the card content */
@@ -62,7 +57,7 @@
 
 .single-card:hover {
   transform: scale(1.08);
-  box-shadow: 0px 0px 30px 1px rgba(25, 35, 45, 0.827);
+  box-shadow: 0px 0px 30px 1px rgba(35, 88, 142, 0.827);
 }
 
 .single-card .content {
@@ -78,7 +73,7 @@
   height: 100px; /* Reduced image size */
   width: 100px; /* Reduced image size */
   border-radius: 12px;
-  background: rgb(215, 207, 211);
+  background: rgb(131, 119, 125);
   padding: 3px;
   transition: transform 0.1s ease;
  
