@@ -80,7 +80,7 @@ const Footer = () => {
             </li>
             <li class="icon instagram">
               <span className="tooltip">Instagram</span>
-              <a href="#">
+              <a href="https://instagram.com/city_homedecors">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="1.4em"
