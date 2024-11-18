@@ -94,7 +94,7 @@ const Footer = () => {
             </li>
             <li class=" icon whatsapp">
               <span className="tooltip">Whatsapp</span>
-              <a href="#">
+              <a href="https://api.whatsapp.com/send?text=City%20Corporation%20%28Hardwares%29%20https%3A%2F%2Fnfc.dgtechsoln.com%2Fcity-corporation-hardwares%2F">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="1.6em"

@@ -127,7 +127,7 @@ const Products = () => {
           <div className="carousel-item">
             <img src={Pys} className="d-block w-100 carousal-fill" alt="..." />
             <div className="carousel-caption  d-md-block">
-              <h5>⁠PYS Furniture Fittings</h5>
+              <h5 className="playfair fw-bold">⁠PYS Furniture Fittings</h5>
               <p className="questrial">
                 Reliable and stylish furniture fittings for every space and
                 style.

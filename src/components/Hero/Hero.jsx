@@ -3,6 +3,7 @@ import "./Hero.css";
 import Card from "../Card/Card";
 import syedImran from '../../images/Syed Imran.jpeg';
 import faisal from "../../images/Faisal.jpeg"
+import sheik from "../../images/Sheik.jpeg"
 import Card2 from "../Card2/Card2";
 
 const Hero = () => {
@@ -40,6 +41,13 @@ const Hero = () => {
         }`}
       >
         <Card2
+          name="Mr.Sheik Dawood"
+          job="Managing Partner"
+          image={sheik}
+          wap="https://wa.me/+919842470433"
+          phone="tel:+919842470433"
+        />
+        <Card2
           name="Mr.Faisal Hussain"
           job="Partner"
           image={faisal}
@@ -50,13 +58,6 @@ const Hero = () => {
           name="Mr.Syed Imran"
           job="Partner"
           image={syedImran}
-          wap="https://wa.me/+919698333833"
-          phone="tel:+919698333833"
-        />
-        <Card2
-          name="Faisal Hussain"
-          job="Partner"
-          image={faisal}
           wap="https://wa.me/+919698333833"
           phone="tel:+919698333833"
         />
